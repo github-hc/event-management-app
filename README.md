@@ -91,8 +91,30 @@ event-management-app/
 
 ## Running the Application
 
-### 1. Run the Backend API
+Choose one of the two options below to run the application.
 
+### Option A: Running with Docker Compose (Recommended)
+
+Make sure you have [Docker](https://www.docker.com/) installed and running on your machine.
+
+1. **Build and start both services in the background:**
+   ```bash
+   docker compose up --build -d
+   ```
+2. **Access the applications:**
+   - **Frontend:** `http://localhost:3000`
+   - **Backend API:** `http://localhost:8000`
+   - **Interactive API Docs (Swagger):** `http://localhost:8000/docs`
+3. **Stop the services:**
+   ```bash
+   docker compose down
+   ```
+
+---
+
+### Option B: Local Development Setup
+
+#### 1. Run the Backend API
 ```bash
 cd backend
 python3 -m venv .venv
@@ -102,8 +124,7 @@ uvicorn app.main:app --reload
 ```
 The backend API server will run at `http://localhost:8000`. You can test it by visiting `http://localhost:8000/docs` to see the Interactive Swagger UI.
 
-### 2. Run the Frontend Dashboard
-
+#### 2. Run the Frontend Dashboard
 Open a new terminal window:
 ```bash
 cd frontend
