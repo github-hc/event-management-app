@@ -1,4 +1,4 @@
-# EventFlow — Event Management System
+# Event Management System
 
 EventFlow is a fullstack web application for organizing events and managing attendee registrations. It provides a real-time responsive dashboard, future-event validations, capacity constraints, duplicate checks, and dynamic slot calculation.
 
