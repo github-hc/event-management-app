@@ -158,13 +158,5 @@ The backend exposes these standard REST endpoints:
 
 ---
 
-## Future Improvements
-
-If extending this application for production use:
-1. **Persistent Database**: Swap the repository implementation to use an SQL database (e.g. Postgres with SQLAlchemy) or Document Store (e.g. MongoDB).
-2. **Transactional Lock boundaries**: Introduce lock primitives on the service layer to prevent race conditions during peak concurrent registration requests.
-3. **Search & Pagination**: Add server-side offset/cursor pagination and search filtering to `/events` list queries.
-4. **User Auth**: Protect registration pathways using standard JWT OAuth2 authentication.
-
 ## Demo Video
 https://www.awesomescreenshot.com/video/54585960?key=98e5d67ce922745ac5dbf42b4709db02
