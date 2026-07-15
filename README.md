@@ -33,11 +33,11 @@ The project is designed with a decoupled architecture. The frontend application 
   │                    FastAPI Backend                  │
   │  ┌──────────────────────────────────────────────┐   │
   │  │                  API Routers                 │   │
-  │  │     app/api/events  &  app/api/registrations  │   │
+  │  │     app/api/events  &  app/api/registrations │   │
   │  └───────────────────────┬──────────────────────┘   │
   │  ┌───────────────────────▼──────────────────────┐   │
   │  │                 Service Layer                │   │
-  │  │   (Enforces business rules & date validation) │   │
+  │  │   (Enforces business rules & date validation)│   │
   │  └───────────────────────┬──────────────────────┘   │
   │  ┌───────────────────────▼──────────────────────┐   │
   │  │               Repository Layer               │   │
